@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #container{
+            width: 100vw;
+            height: 100vh;
+        }
+        #container canvas{
+            display: block;
+            cursor: none;
+        }
+        .info{
+            position: absolute;
+            bottom: 20%;
+            right: 8%;
+            text-align: right;
+            z-index: 100;
+            color: white;
+        }
+        .info div{
+            line-height: 70%;
+            font-size: 8em;
+            font-family: 'Bebas Neue', cursive;
+        }
+        .info p{
+            font-size: 2em;
+            font-family: 'Rajdhani', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+    <div>COTOPAXI</div>
+    <p>5897 m.s.n.m</p>
+    </div>
+    <div id="container"></div>
+    <script src='app.js'></script>
+</body>
+</html>
